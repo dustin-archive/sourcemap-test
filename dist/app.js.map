@@ -1,0 +1,1 @@
+{"version":3,"sources":["../bar.js"],"names":["foo","bar"],"mappings":"yBACA,IAAAA,EAAS,SAAaC","sourcesContent":["\nconst bar = foo => foo + ' bar'\n\nexport default bar\n"]}
