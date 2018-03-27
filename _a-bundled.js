@@ -14,4 +14,4 @@
   alert(foo('bar'));
   alert(foo('bar'));
   alert(bar('foo'));
-})(); //# sourceMappingURL=z-bundled.js.map
+})(); //# sourceMappingURL=_a-bundled.js.map

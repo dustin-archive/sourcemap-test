@@ -1,1 +1,0 @@
-{"version":3,"file":"z-minified.js","sources":["bar.js"],"sourcesContent":["\nconst bar = foo => foo + ' bar'\n\nexport default bar\n"],"names":["foo","bar"],"mappings":"yBACA,IAAAA,EAAA,SAAAC"}

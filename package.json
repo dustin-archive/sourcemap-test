@@ -4,10 +4,10 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "rollup": "rollup app.js -o z-bundled.js -f iife -m",
-    "babel": "babel z-bundled.js -o z-bundled.js --presets=@babel/preset-es2015",
-    "uglify": "uglifyjs z-bundled.js -o z-minified.js -c -m --source-map url='z-minified.js.map'",
-    "sorcery": "sorcery -i z-minified.js -o z-final.js",
+    "rollup": "rollup app.js -o _a-bundled.js -f iife -m",
+    "babel": "babel _a-bundled.js -o _a-bundled.js --presets=@babel/preset-es2015",
+    "uglify": "uglifyjs _a-bundled.js -o _b-minified.js -c -m --source-map url='_b-minified.js.map'",
+    "sorcery": "sorcery -i _b-minified.js -o _c-final.js",
     "build": "npm run rollup && npm run babel && npm run uglify && npm run sorcery"
   },
   "author": "Dustin Dowell <dustindowell2@gmail.com>",
