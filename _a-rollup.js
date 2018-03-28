@@ -6,9 +6,7 @@
 	const bar = foo => foo + ' bar';
 
 	alert(foo('bar'));
-
 	alert(foo('bar'));
-
 	alert(bar('foo'));
 
 }());
