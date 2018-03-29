@@ -1,6 +1,4 @@
 
-var bar = function (foo) {
-  return foo + ' bar'
-}
+const bar = foo => foo + ' bar'
 
 export default bar
