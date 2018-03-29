@@ -6,23 +6,15 @@
   "scripts": {
     "clean": "rm -rf dist && mkdir dist",
     "rollup": "rollup src/app.js -o dist/app.js -f iife -m",
-    "transform": "node scripts/babel | uglifyjs -o dist/app.js -c -m --source-map content='dist/app.js.map',url='app.js.map'",
+    "transform": "babel dist/app.js --input-source-map dist/app.js.map --source-maps --presets=@babel/preset-es2015 | uglifyjs -o dist/app.js -c -m --source-map content='dist/app.js.map',url='app.js.map'",
     "build": "npm run clean && npm run rollup && npm run transform"
   },
   "author": "Dustin Dowell <dustindowell2@gmail.com>",
   "license": "MIT",
   "devDependencies": {
+    "@babel/cli": "^7.0.0-beta.42",
     "@babel/core": "^7.0.0-beta.42",
-    "@babel/plugin-transform-arrow-functions": "^7.0.0-beta.42",
-    "@babel/plugin-transform-block-scoped-functions": "^7.0.0-beta.42",
-    "@babel/plugin-transform-block-scoping": "^7.0.0-beta.42",
-    "@babel/plugin-transform-computed-properties": "^7.0.0-beta.42",
-    "@babel/plugin-transform-destructuring": "^7.0.0-beta.42",
-    "@babel/plugin-transform-function-name": "^7.0.0-beta.42",
-    "@babel/plugin-transform-parameters": "^7.0.0-beta.42",
-    "@babel/plugin-transform-shorthand-properties": "^7.0.0-beta.42",
-    "@babel/plugin-transform-spread": "^7.0.0-beta.42",
-    "@babel/plugin-transform-template-literals": "^7.0.0-beta.42",
+    "@babel/preset-es2015": "^7.0.0-beta.42",
     "rollup": "^0.57.1",
     "uglify-js": "^3.3.16"
   }
