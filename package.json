@@ -6,11 +6,23 @@
   "scripts": {
     "clean": "rm -rf dist && mkdir dist",
     "rollup": "rollup src/app.js -o dist/app.js -f iife -m -c",
-    "build": "npm run clean && npm run rollup"
+    "babel": "node scripts/babel",
+    "build": "npm run clean && npm run rollup && npm run babel"
   },
   "author": "Dustin Dowell <dustindowell2@gmail.com>",
   "license": "MIT",
-  "dependencies": {
+  "devDependencies": {
+    "@babel/core": "^7.0.0-beta.42",
+    "@babel/plugin-transform-arrow-functions": "^7.0.0-beta.42",
+    "@babel/plugin-transform-block-scoped-functions": "^7.0.0-beta.42",
+    "@babel/plugin-transform-block-scoping": "^7.0.0-beta.42",
+    "@babel/plugin-transform-computed-properties": "^7.0.0-beta.42",
+    "@babel/plugin-transform-destructuring": "^7.0.0-beta.42",
+    "@babel/plugin-transform-function-name": "^7.0.0-beta.42",
+    "@babel/plugin-transform-parameters": "^7.0.0-beta.42",
+    "@babel/plugin-transform-shorthand-properties": "^7.0.0-beta.42",
+    "@babel/plugin-transform-spread": "^7.0.0-beta.42",
+    "@babel/plugin-transform-template-literals": "^7.0.0-beta.42",
     "hyperapp": "^1.2.5",
     "rollup": "^0.57.1",
     "rollup-plugin-node-resolve": "^3.3.0"
