@@ -10,7 +10,6 @@ const result = babel.transformFileSync('dist/app.js', {
     require('@babel/plugin-transform-block-scoping'),
     require('@babel/plugin-transform-computed-properties'),
     require('@babel/plugin-transform-destructuring'),
-    require('@babel/plugin-transform-for-of'),
     require('@babel/plugin-transform-function-name'),
     require('@babel/plugin-transform-parameters'),
     require('@babel/plugin-transform-shorthand-properties'),
