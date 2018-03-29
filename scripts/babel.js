@@ -18,6 +18,6 @@ const result = babel.transformFileSync('dist/app.js', {
   ]
 })
 
-process.stdout.write(result.code)
-
 fs.writeFileSync('dist/app.js.map', JSON.stringify(result.map), 'utf8')
+
+process.stdout.write(result.code)
