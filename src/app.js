@@ -1,6 +1,6 @@
 
-import foo from './foo'
-import bar from './bar'
+import foo from './nest/foo'
+import bar from './nest/bar'
 
 alert(foo('bar'))
 

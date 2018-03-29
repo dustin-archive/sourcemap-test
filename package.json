@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "clean": "rm -rf dist && mkdir dist",
-    "rollup": "rollup app.js -o dist/app.js -f iife -m",
+    "rollup": "rollup src/app.js -o dist/app.js -f iife -m",
     "uglify": "uglifyjs dist/app.js -o dist/app.js -c -m --source-map content='dist/app.js.map',url='app.js.map'",
     "build": "npm run clean && npm run rollup && npm run uglify"
   },
